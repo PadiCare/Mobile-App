@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".HomeActivity">
+
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:padding="16dp"
+        android:text="PadiCare"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Scan Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <!-- Outer Box -->
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:background="@color/light_green"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:elevation="8dp"
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            android:clipToPadding="true">
+
+            <!-- Circular Button -->
+            <FrameLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/circle_background"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_scan_now"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Scan now!"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/green" />
+            </FrameLayout>
+
+            <!-- Subtitle -->
+            <TextView
+                android:id="@+id/tv_free"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Free"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="8dp"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- About Us Button -->
+    <Button
+        android:id="@+id/btn_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="About Us"
+        android:backgroundTint="@color/green"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
